@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Hero } from "../components/hero";
 import TreeFloat from "../components/treeFloat";
 import { Footer } from "../components/footer";

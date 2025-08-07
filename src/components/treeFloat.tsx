@@ -21,8 +21,9 @@ export default function TreeFloat() {
       }
     );
 
-    animation.addEventListener("iteration", (event) => {
-      const e = event as AnimationPlaybackEvent;
+    animation.addEventListener("iteration", () => {
+      // const e = event as AnimationPlaybackEvent;
+      // nada a fazer aqui por enquanto
     });
   }, []);
 

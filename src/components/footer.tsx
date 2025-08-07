@@ -5,13 +5,14 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import logo from "../../public/logo.png";
+import Link from "next/link";
 
 export function Footer() {
   return (
     <footer className=" text-black py-12">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <div className="flex justify-center md:justify-start">
-          <a href="/" target="_parent">
+          <Link href="/" target="_parent">
             <Image
               src={logo}
               alt="Logo Memobelc"
@@ -20,7 +21,7 @@ export function Footer() {
               className="object-contain"
               priority
             />
-          </a>
+          </Link>
         </div>
 
         <div className="text-center text-sm md:text-base">
@@ -28,9 +29,9 @@ export function Footer() {
             © {new Date().getFullYear()} Memobelc LTDA. Todos os direitos
             reservados.
           </p>
-          <a href="/privacy-policy" className="font-bold hover:underline">
+          <Link href="/privacy-policy" className="font-bold hover:underline">
             Política de Privacidade
-          </a>
+          </Link>
         </div>
 
         <div className="flex justify-center md:justify-end gap-6">

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import logo from "../../../public/logo.png";
 import TreeFloat from "@/components/treeFloat";
+import Link from "next/link";
 
 export default function PrivacyPolicy() {
   return (
@@ -17,14 +18,14 @@ export default function PrivacyPolicy() {
 
       <header className="bg-[#219ae7] py-4">
         <div className="container mx-auto flex justify-center items-center">
-          <a href="/" target="_parent">
+          <Link href="/" target="_parent">
             <Image
               src={logo}
               alt="Logo Memobelc"
               className="h-32 object-contain"
               priority
             />
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -33,8 +34,8 @@ export default function PrivacyPolicy() {
         <p className="mb-4">Effective Date: May 5, 2025</p>
 
         <p className="mb-4">
-          Memobelc LTDA ("us", "we", or "our") operates the Memobelc mobile
-          application (the "Service")...
+          Memobelc LTDA ({"us"}, {"we"}, or {"our"}) operates the Memobelc
+          mobile application (the {"Service"})...
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-2">
@@ -153,7 +154,7 @@ export default function PrivacyPolicy() {
             >
               contato@memobelc.com
             </a>{" "}
-            with the subject <em>"Account Deletion Request"</em>.
+            with the subject <em>&quot;Account Deletion Request&quot;</em>.
           </p>
           <h3 className="text-xl font-semibold mb-2">
             What data will be deleted?
@@ -161,8 +162,8 @@ export default function PrivacyPolicy() {
           <ul className="list-disc list-inside mb-4">
             <li>Your name, email, and encrypted password</li>
             <li>
-              All content you've uploaded. Shared/duplicated content will not be
-              deleted.
+              All content you&apos;ve uploaded. Shared/duplicated content will
+              not be deleted.
             </li>
             <li>Usage history and learning progress</li>
           </ul>

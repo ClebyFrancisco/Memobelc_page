@@ -3,21 +3,21 @@ import logo from "../../../public/logo.png";
 import instagramlogo from "../../../public/Instagram_logo.svg";
 import Image from "next/image";
 import { Footer } from "@/components/footer";
-import { InstagramLogoIcon } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 
 export default function TreePage() {
   return (
     <>
       <div className="min-h-screen bg-[#219ae7] flex flex-col items-center justify-between p-6 relative">
         <div className="mt-6">
-          <a href="/" target="_parent">
+          <Link href="/" target="_parent">
             <Image
               src={logo}
               alt="Logo Memobelc"
               className="h-32 object-contain"
               priority
             />
-          </a>
+          </Link>
         </div>
 
         <div className="bg-orange-400 text-white font-semibold px-6 py-2 rounded-full text-center shadow-md">

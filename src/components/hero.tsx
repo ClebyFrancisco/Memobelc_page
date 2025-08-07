@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import mobiles from "../../public/mobiles.png";
 import logo from "../../public/logo.png";
 import iPhone16Pro from "../../public/iPhone16Pro.png";
 import { Button } from "../components/ui/button";
