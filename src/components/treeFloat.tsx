@@ -32,9 +32,10 @@ export default function TreeFloat() {
       ref={floatBtnRef}
       href="/tree"
       target="_parent"
-      className="fixed bottom-8 right-8 z-[9999] w-[60px] h-[60px] rounded-full flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700 hover:from-green-500 hover:to-green-500 transition-all duration-500"
+      className="fixed bottom-8 right-8 z-[9999] w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-br from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-110"
+      aria-label="Árvore de conhecimento"
     >
-      <PaperclipIcon size={28} className="text-white" />
+      <PaperclipIcon size={32} className="text-white" weight="fill" />
     </a>
   );
 }
